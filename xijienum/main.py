@@ -4,5 +4,13 @@ def xijie(n):
     a = int(b + c)
     return a, b, c
 
-for i in range(100):
-    print(xijie(i))
+ret = []
+for i in range(10000):
+    n = xijie(i)
+    a = n[0]
+    b = n[1]
+    c = n[2]
+    ret.append(f"a={a}, b={b}, c={c}\n")
+
+with open("data.txt", "w") as f:
+    f.write("".join(ret))
