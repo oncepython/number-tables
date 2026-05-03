@@ -3,4 +3,10 @@
   
   // 使用官方预定义镜像
   "image": "mcr.microsoft.com/devcontainers/python:3.11"
+
+  "features": {
+    "ghcr.io/devcontainers/features/sshd:1": {
+        "version": "latest"
+    }
+  }
 }
